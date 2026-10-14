@@ -1,1 +1,36 @@
-Upload the answer here
+import java.util.Scanner;
+
+public class IT26102586Lab3Q1B{
+	        public static void main(String[] args){
+			double pricePerKg,quantity,totalAmount,discountTotal,finalAmount;
+			
+			double discount=0.10;
+			
+			//create object
+			Scanner input=new Scanner(System.in);
+			
+			System.out.println("Enter the price of 1kg Rice");
+			pricePerKg=input.nextDouble();
+			
+			System.out.println("Enter the kg you want");
+			quantity=input.nextDouble();
+			
+			totalAmount=pricePerKg*quantity;
+			
+			discountTotal=totalAmount*discount;
+			
+			finalAmount=totalAmount-discountTotal;
+			
+			System.out.println("The total amount:"+totalAmount);
+			System.out.println("The Discount amount:"+discountTotal);
+			System.out.println("The Final amount:"+finalAmount);
+			
+			
+			}
+			
+
+
+
+
+
+}
